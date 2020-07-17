@@ -13,6 +13,10 @@
     <header>
         <!--Cabezote del sitio web donde puede ir logo y botones de redes sociales-->
         Cabezote
+
+        <div class="logotipo">
+            logotipo
+        </div>
     </header>
 
     <nav>
@@ -29,6 +33,9 @@
     <aside>
         <!--para identificar columnas-->
         Columnas
+        <div class="noticia1">Noticia 1</div>
+        <div class="noticia2">Noticia 2</div>
+        <div class="noticia3">Noticia 3</div>
 
     </aside>
 
@@ -79,11 +86,66 @@
 
         <figure>
         <!--Para estructurar de mejor forma nuestras imagenes-->
-
         <img src="img/server.svg" alt="">
         </figure>
+
         <figcaption><!--Para colocar pie de pagina a las imagenes --></figcaption>
     </p>
+    <hr>
+
+    <center>Formulario
+
+        <form action="">
+            <label for="texto">Entrada de texto: </label>
+            <input id="texto" type="text" placeholder="entrada de texto" value="" required>
+
+            <br>
+            <br>
+
+            <label for="correo">Entrada de correo</label>
+            <input type="email" id="correo" placeholder="Entrada de correo" value="" required>
+            
+            <br>
+            <br>
+
+            <label for="pass">contraseña: </label>
+            <input type="password" id="pass" placeholder="Entrada de password" value="" required>
+
+            <br>
+            <br>
+
+            <input type="number" min="0" max="3" placeholder="Entrada de némeros" value="1">
+
+            <br>
+            <br>
+
+            <select name="" id="select">
+                <option value="">option1</option>
+                <option value="">option2</option>
+                <option value="">option3</option>
+            </select>
+
+            <br>
+            <br>
+
+            <input type="checkbox" name="" id="rojo"><label for="ro">Rojo</label>
+            <input type="checkbox" name="" id="rojo"><label for="ro">Amarillo</label>
+            <input type="checkbox" name="" id="rojo"><label for="ro">Verde</label>
+
+            <br>
+            <br>
+
+            <input type="radio" name="radio" id="radio"><label for="blanco">Blanco</label>
+            <input type="radio" checked name="radio" id="radio"><label for="blanco">Negro</label>
+
+            <br>
+            <br>
+
+            <input type="button" act value="Enviar formulario">
+        </form>
+    </center>
+
+    <hr>
 
     <ol>
           <!--para etiquetas-->
@@ -113,14 +175,50 @@
     </table>
     <h1>RESULTADO DE NOTAS</h1>
 
-    <p>Michelle Velásquez: <meter value="98" min="0" max="100" high="100"></meter></p>
-    <p>Brandon Santos: <meter value="100" min="0" max="100" high="100"></meter> </p>
+    <p>Michelle Velásquez: <meter value="94" min="0" max="100" high="90"></meter></p>
+    <p>Brandon Santos: <meter value="80" min="0" max="100" high="90"></meter> </p>
     <p>Hugo Santos: <meter value="48" min="0" max="100" high="96"></meter></p>
 
     <h1>RESULTADO DE VENTAS</h1>
-    <p>FEBRERO: <progress></progress> </p>
+    <p>FEBRERO: <progress value="90" min="0" max="96"></progress> </p>
+    <p>MARZO: <progress value="90" min="0" max="96"></progress> </p>
+    
+
+    <audio controls loop preload="metadata">
+    <!--OGG 1 El archivo OGG Lo va a leer firefox VERBIS .ogg-->  
+    <!--MP3 2 Sistem operativo IOS ME VA A CPATURAR EL MP3 .mp3-->
+    <!--WAv .wav-->
+    <!--WAv .wav-->
+    <!--ACC .m4a .mp4 .acc-->
+
+    <source src="audio/audio.m4a">
+
+    <source src="audio/audio.mp3">
+
+    <source src="audio/audio.ogg">
+
+    </audio>
+    <hr>
+    <video controls width="500" height="200">
+        <!-- Maneja los siguientes formatos-->
+        <!-- ogg //firefox chrome opers-->
+        <!-- mp4 //safari chrome ie ios android-->
+        <!-- webm //webm utilizada en html-->
+        <!-- ogg-->
+            <!--Video online convert-->
+    <source src="video/video.mp4" type="video/mp4"></source>
+    <source src="video/video.ogv" type="video/ogv"></source>
+    <source src="video/video.webm" type="video/webm"></source>
+
+    </video>
+
+    <iframe src="https://www.youtube.com/embed/uS4scGcAucY" allowfullscreen frameborder="0" width="500" height="200"></iframe>
+
     <footer><!--Nuestro pie de pag-->
+
     Desarrollado por Michi
+
     </footer>
+
 </body>
 </html>
