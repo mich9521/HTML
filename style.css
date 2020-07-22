@@ -1,0 +1,338 @@
+   /*EL SELECTOR UNIVERSAL*/
+        
+   *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Roboto Mono', monospace;
+
+}
+.chat{
+    /*Valor que nos permite pegar una caja*/
+    position: fixed;
+    width: 250px;
+    height: 40px;
+    bottom: 0;
+    right: 20px;
+    background: red;
+    /*Nos permite manejar las cajas con ejes de profundidad*/
+    z-index:1;
+    line-height: 40px;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+
+}
+
+header{
+    /*La propiedad de posición tiene 3 valores*/
+    /**/
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 120px;
+}
+
+#logo{
+    /* Permite tener una caja interno dentro de otra caja principal*/
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 200px;
+    height: 60px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+.redes{
+   position: absolute;
+   width: 42px;
+   height: 42px;
+   background: #e8a552ed;
+   border-radius: 40px;
+   text-align: center;
+   font-family:'Lato', sans-serif;
+   line-height: 42px;
+
+}
+
+#icono1{
+
+   top: 42px;
+   right:128px;
+}
+
+#icono2{
+
+   top:42px;
+   right: 71px;
+   background: #d45c30ed;
+}
+
+#icono3{
+   top:42px;
+   right: 19px;
+   background:#983a18c4 ;
+}
+
+/* Float hace lotar el listado a nivel horizontal*/
+.botones{
+   float: left;
+   width: 196px;
+   height: 48px;
+   background: #d45c30ed;
+   color: white;
+   text-align: center;
+   line-height: 48px;
+   /*Margen de 0 es nivel horizontal y 2 es nivel vertical*/
+   margin: 0 2px;
+}
+a .botones:hover{
+   background: #ca6845f7;
+}
+
+a .botones:active{
+
+   background: #e8a552ed;
+}
+nav{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 48px;
+}
+
+#top{
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 192px;
+
+}
+#top ul{
+    width: 1010px;
+    height: 192px;
+
+}
+#top ul li{
+    float: left;
+    width: 326px;
+    height: 192px;
+    margin-right: 10px;
+    text-align: center;
+
+}
+#top ul li img{
+    height: 50px;
+}
+#top ul li h1{
+    font-family: 'Lato', sans-serif;
+}
+#top ul li p{
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+section{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 453px;
+    margin:20px auto;
+}
+
+/*Hace parte de la misma caja*/
+aside.izq{
+    /* ABSOLUTE*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 453px;
+    
+
+}
+
+aside ul li{
+    background:#983a18c4 ;
+    /*Padding es un margen externo*/
+    padding: 20px;
+    margin: 2px 14px;
+    list-style: square;
+    list-style-position: inside;
+    list-style-image: url(img/play.png);
+}
+
+aside ul li a{
+    text-decoration:none;
+    color: white;
+
+    
+}
+aside.der{
+
+    position: absolute;
+    right:0;
+    top:0;
+    width: 200px;
+    height: 453px;
+
+}
+article{
+    position: absolute;
+    left: 200px;
+    top:0;
+    width: 600px;
+    height: 453px;
+}
+article h1{
+
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    margin: 20px;
+}
+article p img{
+
+    float: left;
+    margin-right: 20px;
+}
+article p{
+    margin:5px 20px;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+footer{
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 70px;
+   background: #d45c30ed;
+   text-align: center;
+   line-height: 70px;
+   font-family: 'Roboto Condensed', sans-serif;
+   color: white;
+   font-weight: bold;
+}
+aside.der h1{
+    width: 200px;
+    height: 50;
+    line-height: 50px;
+    text-align: center;
+    background: #983a18c4 ;
+    color: white;
+    margin-bottom: 5px ;
+}
+aside.der input{
+    padding: 10px;
+    margin: 5px 0;
+    width: 177px;
+}
+aside.der input[type="text"]{
+
+    background: url(img/user.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+
+}
+
+aside.der input[type="password"]{
+    background:url(img/pass1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+
+}
+    /*aside.der input[type="email"]{
+    background:url(img/email.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+
+}*/
+
+aside.der input[type="submit"]{
+    width: 200px;
+    background: rgba(red, green, blue, alpha);
+    border:6px;
+    color: black;
+}
+
+
+
+
+
+/*
+selector: es el nombre el id, clase o desde cualquier otro atributo de la etiqueta
+propiedad de objeto,  color, texto
+*/
+
+/*body{
+    background: coral;
+}
+#caja{
+    width: 300px;
+    height: 300px;
+    background-color: burlywood;
+}
+.grupo{
+    width: 300px;
+    height: 300px;
+    background: cadetblue;
+    margin: 5px;
+}
+header{
+    width: 1000px;
+    height: 300px;
+    background:coral;
+    margin: 20px;
+    border:5px solid cornflowerblue;
+    padding:29px;
+
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    background: cornflowerblue;
+    border: 5px solid cornsilk;
+    border-radius:110px;
+
+}
+*/
+/*QUE ES UN WIREFRAME:
+Es una representación visual de objetos tridimensionales, 
+como aquellos empleados en el desarrollo y diseño de productos:
+Es una representacion visual en escala de grises y funcionalidad. 
+Se utiliza en las primeras etapas del proceso de desarrollo con el fin
+de establecer la estructura basica de una pagina antes de agregar el contenido
+y el diseño visual, se puede crear con papel, directamente en HTML/CSS o aplicaciones de software.
+
+SITEMAP: is a file where you provide information about the pages, videos, and other files on your site: NaN;
+*/
+/*
+.grupo{
+    width:200px;
+    height: 200px;
+    margin: 20px;
+
+}
+
+#c1{
+    background:coral;
+}
+*/
+/*
+#c2{
+    background: #b7653eeb;
+*/
+    /*COLORES HEXADECIMALES: CODIGO ESTANDAR BASADO EN NUMEROS Y LETRAS*/
+/*}*/
+/*
+#c3{
+    background: rgba(255, 98, 255, 1);
+}
+*/

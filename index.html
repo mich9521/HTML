@@ -4,112 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        /*EL SELECTOR UNIVERSAL*/
-        *{
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        header{
-            /*La propiedad de posición tiene 3 valores*/
-            /**/
-            position: relative;
-            margin: 20px auto;
-            width: 1000px;
-            height: 120px;
-            background: #d45c30ed;
-        }
-
-        nav{
-            position: relative;
-            margin: auto;
-            width: 1000px;
-            height: 48px;
-            background:#af4f2ced;
-        }
-
-        #top{
-
-            width: 1000px;
-            height: 192px;
-            margin: 20px auto;
-            background:#af4f2ced;
-
-        }
-        /*
-        selector: es el nombre el id, clase o desde cualquier otro atributo de la etiqueta
-        propiedad de objeto,  color, texto
-        */
-
-        /*body{
-            background: coral;
-        }
-        #caja{
-            width: 300px;
-            height: 300px;
-            background-color: burlywood;
-        }
-        .grupo{
-            width: 300px;
-            height: 300px;
-            background: cadetblue;
-            margin: 5px;
-        }
-        header{
-            width: 1000px;
-            height: 300px;
-            background:coral;
-            margin: 20px;
-            border:5px solid cornflowerblue;
-            padding:29px;
-
-        }
-        .logo{
-            width: 200px;
-            height: 200px;
-            background: cornflowerblue;
-            border: 5px solid cornsilk;
-            border-radius:110px;
-
-        }
-        */
-        /*QUE ES UN WIREFRAME:
-        Es una representación visual de objetos tridimensionales, 
-        como aquellos empleados en el desarrollo y diseño de productos:
-        Es una representacion visual en escala de grises y funcionalidad. 
-        Se utiliza en las primeras etapas del proceso de desarrollo con el fin
-        de establecer la estructura basica de una pagina antes de agregar el contenido
-        y el diseño visual, se puede crear con papel, directamente en HTML/CSS o aplicaciones de software.
-        
-        SITEMAP: is a file where you provide information about the pages, videos, and other files on your site: NaN;
-        */
-        /*
-        .grupo{
-            width:200px;
-            height: 200px;
-            margin: 20px;
-
-        }
-
-        #c1{
-            background:coral;
-        }
-        */
-        /*
-        #c2{
-            background: #b7653eeb;
-        */
-            /*COLORES HEXADECIMALES: CODIGO ESTANDAR BASADO EN NUMEROS Y LETRAS*/
-        /*}*/
-    /*
-        #c3{
-            background: rgba(255, 98, 255, 1);
-        }
-      */
-     
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Roboto+Mono:wght@200;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="">
 </head>
 <body>
     <!--
@@ -135,24 +33,29 @@
 <div id="c3" class="grupo">
 </div>
 -->
+
+<div class="chat">
+    Chat
+</div>
 <!--MI CABEXOTE WEBSITE-->
 <header>
     <div id="logo">
+        logotipo
     </div>
 
-    <div id="icono1"></div>
-    <div id="icono2"></div>
-    <div id="icono3"></div>
+    <div id="icono1" class="redes"><img src="img/exit.svg" alt=""></div>
+    <div id="icono2" class="redes"><img src="img/exit.svg" alt=""></div>
+    <div id="icono3" class="redes"><img src="img/exit.svg" alt=""></div>
 </header>
 <!--CIERRA CABEZOTE-->
 <!--INICIA MI NAVEGADOR WEBSITE-->
 <nav>
     <ul>
-        <li class="botones"></li>
-        <li class="botones"></li>
-        <li class="botones"></li>
-        <li class="botones"></li>
-        <li class="botones"></li>
+        <a href="#"><li class="botones">Boton 1</li></a>
+        <a href="#"><li class="botones">Boton 2</li></a>
+        <a href="#"><li class="botones">Boton 3</li></a>
+        <a href="#"><li class="botones">Boton 4</li></a>
+        <a href="#"><li class="botones">Boton 5</li></a>
 
     </ul>
 </nav>
@@ -162,9 +65,22 @@
 <div id="top">
 
     <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+            <img src="img/user1.png" alt="" width="50">
+            <h1>loren ipsum</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </li>
+
+        <li>
+            <img src="img/user2.png" alt="" width="50">
+            <h1>loren ipsum</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </li>
+        <li>
+            <img src="img/user1.png" alt="" width="50">
+            <h1>loren ipsum</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </li>
     </ul>
 </div>
 
@@ -172,14 +88,50 @@
 <!--INICIA SECCION-->
 <section>
 
-<aside class="izq"></aside>
-<article></article>
+<aside class="izq">
+    <ul>
+        <li><a href="informacion.html">Link 1</a></li>
+        <li><a href="informacion.html">Link 2</a></li>
+        <li><a href="informacion.html">Link 3</a></li>
+        <li><a href="informacion.html">Link 4</a></li>
+    </ul>
+</aside>
+<article>
+    <h1>Lorem Ipsum</h1>
+
+    <p><img src="img/user1.png" alt="" width="120px">
+    Lorem ipsum dolor sit amet consectetur
+     adipisicing elit. Iusto aliquid ullam 
+     quam aspernatur, incidunt facere eaque
+     voluptatum, quos vitae sint, 
+    cumque quaerat corrupti nisi. Velit, 
+    magni! Facilis harum laudantium tenetur.</p>
+
+    <br>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi molestias atque eius rerum h
+    arum voluptate provident earum recusandae modi! Quia iusto enim alias dolor non distinctio recusandae quos neque quisquam! lore</p>
+
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quod deleniti rerum. Provident ducimus officia praesentium eveniet pariatur doloribus, non optio ab iusto quisquam rerum nisi exercitationem ut maxime aperiam!</p>
+</article>
 <aside class="der">
+
+    <h1>Ingreso</h1>
+
+    <form action="">
+
+        <input type="text" placeholder="usuario">
+        <input type="password" name="" id="" placeholder="contraseña">
+        <input type="submit" value="Enviar">
+    </form>
 
 </aside>
 
 </section>
 
-<footer></footer>
+<footer>
+    developed by michtasks
+</footer>
 </body>
 </html>
