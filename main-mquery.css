@@ -1,0 +1,139 @@
+/* COLUMNS DESIGNED*/
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 14px;
+    font-family: sans-serif;
+    text-decoration: none;
+    box-sizing:border-box;
+    /*Esto indica que el relleno y el borde estan incluidos en el ancho total y la altura de los elementos*/
+    /*Tamaño de caja que no aplique el borde de caja */
+
+}
+.contenedor{
+
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+
+
+
+}
+
+.fila{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height:auto;
+    /*Las columnas dentro de una fila estan flotando a la izquierda, y por lo tanto se toman duera del flujo de la pagina, y otros elementos seran colocados como si no
+    fueran de las columnas, para evitar esto, vamos añadir un estilo  que despeje al flujo */
+    clear: both;
+    /*Ocupan espacio en la caja de nodos*/
+    display: table;
+    /*display table: permite agregar altura*/
+}
+/*
+.col-12{
+    width: 100%;
+    background: red;
+    border: 1px solid black;
+}
+
+.col-6{
+    float: left;
+    width: 50%;
+    background-color: green;
+    border:1px solid black;
+}
+
+.col-4{
+
+    float: left;
+    width: 33.33%;
+    background-color: pink;
+    border: 1px solid black;
+}
+*/
+
+/*El total de columnas es 12 para saber el total de las otras 11 debemos hacer una regla de 3: n*100/12 */
+
+
+
+[class*="col-"]{
+    float: left;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+
+/*PANTALLA DE ESCRITORIO GRANDE - LARGE(lg)*/
+
+@media(min-width:1200px){
+    .col-lg-12{width: 100%;}
+    .col-lg-11{width: 91.66666667%;}
+    .col-lg-10{width:83.33333333%;}
+    .col-lg-9{width: 75%;}
+    .col-lg-8{width: 66.66666667%;}
+    .col-lg-7{width: 58.33333333%;}
+    .col-lg-6{width: 50%;}
+    .col-lg-5{width: 41.66666667%;}
+    .col-lg-4{width: 33.33333333%;}
+    .col-lg-3{width: 25%;}
+    .col-lg-2{width:16.66666667%;}
+    .col-lg-1{width: 8.33333333%;}   
+}
+/*PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md)*/
+ @media(max-width:1199px) and (min-width:992px){
+    .col-md-12{width: 100%;}
+    .col-md-11{width: 91.66666667%;}
+    .col-md-10{width:83.33333333%;}
+    .col-md-9{width: 75%;}
+    .col-md-8{width: 66.66666667%;}
+    .col-md-7{width: 58.33333333%;}
+    .col-md-6{width: 50%;}
+    .col-md-5{width: 41.66666667%;}
+    .col-md-4{width: 33.33333333%;}
+    .col-md-3{width: 25%;}
+    .col-md-2{width:16.66666667%;}
+    .col-md-1{width: 8.33333333%;}   
+ }
+/*PANTALLA DE TABLETS - SMALL (SM)*/
+
+@media(max-width:991px) and (min-width:768px){
+
+    .col-sm-12{width: 100%;}
+    .col-sm-11{width: 91.66666667%;}
+    .col-sm-10{width:83.33333333%;}
+    .col-sm-9{width: 75%;}
+    .col-sm-8{width: 66.66666667%;}
+    .col-sm-7{width: 58.33333333%;}
+    .col-sm-6{width: 50%;}
+    .col-sm-5{width: 41.66666667%;}
+    .col-sm-4{width: 33.33333333%;}
+    .col-sm-3{width: 25%;}
+    .col-sm-2{width:16.66666667%;}
+    .col-sm-1{width: 8.33333333%;}   
+}
+
+ /*PANTALLA DE PHONES - EXTRA SMALL (xs)*/
+ @media(max-width:767px){
+    .col-xs-12{width: 100%;}
+    .col-xs-11{width: 91.66666667%;}
+    .col-xs-10{width:83.33333333%;}
+    .col-xs-9{width: 75%;}
+    .col-xs-8{width: 66.66666667%;}
+    .col-xs-7{width: 58.33333333%;}
+    .col-xs-6{width: 50%;}
+    .col-xs-5{width: 41.66666667%;}
+    .col-xs-4{width: 33.33333333%;}
+    .col-xs-3{width: 25%;}
+    .col-xs-2{width:16.66666667%;}
+    .col-xs-1{width: 8.33333333%;}   
+ }
+
+
+
